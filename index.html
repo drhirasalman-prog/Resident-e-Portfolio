@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Sam Rahman – e-Portfolio</title>
+<style>
+:root{--bg:#f5f7f8;--card:#fff;--ink:#1d2a33;--mute:#5d6b75;--line:#dbe2e6;--brand:#0f5c6e;--brand-ink:#fff;--soft:#e4f1f4;--warn:#fdf3dc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11191e;--card:#192329;--ink:#e6edf0;--mute:#9db0ba;--line:#2b3a42;--brand:#5bb8cc;--brand-ink:#0b1519;--soft:#16323a;--warn:#33291a;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--brand);color:var(--brand-ink);padding:18px 16px 14px}
+.wrap{max-width:860px;margin:0 auto}
+.id{display:flex;gap:14px;align-items:center}
+.av{width:52px;height:52px;border-radius:50%;background:var(--brand-ink);color:var(--brand);display:grid;place-items:center;font-weight:700;font-size:20px;flex:none}
+h1{margin:0;font-size:1.3rem;line-height:1.2}
+.sub{margin:2px 0 0;opacity:.9;font-size:.9rem}
+nav{display:flex;gap:4px;overflow-x:auto;background:var(--card);border-bottom:1px solid var(--line);padding:0 8px;position:sticky;top:0;z-index:5}
+nav button{background:none;border:0;border-bottom:3px solid transparent;color:var(--mute);font:inherit;font-size:.92rem;padding:12px 10px;white-space:nowrap;cursor:pointer}
+nav button[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+nav button:focus-visible,summary:focus-visible{outline:3px solid var(--brand);outline-offset:-3px}
+main{padding:16px}
+section{display:none}
+section.on{display:block}
+h2{font-size:1.1rem;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.stat b{display:block;font-size:1.5rem;line-height:1.2;color:var(--brand)}
+.stat span{font-size:.85rem;color:var(--mute)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-weight:600}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;background:var(--soft);font-size:.8rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.cert{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:6px;padding:12px}
+.cert b{display:block}
+.cert span{font-size:.85rem;color:var(--mute)}
+.bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden;min-width:90px}
+.bar i{display:block;height:100%;background:var(--brand)}
+.empty{text-align:center;padding:34px 16px;color:var(--mute);border:2px dashed var(--line);border-radius:8px;background:var(--card)}
+.empty b{display:block;color:var(--ink);font-size:1.05rem;margin-bottom:4px}
+.empty button{margin-top:12px;font:inherit;padding:8px 16px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--mute);cursor:not-allowed}
+details{background:var(--warn);border:1px solid var(--line);border-radius:8px;margin:18px 16px;max-width:828px}
+@media(min-width:900px){details{margin-left:auto;margin-right:auto}}
+summary{cursor:pointer;padding:12px 14px;font-weight:600}
+details ol{margin:0;padding:0 14px 14px 36px}
+details li{margin-bottom:6px}
+footer{text-align:center;color:var(--mute);font-size:.8rem;padding:10px 16px 24px}
+</style>
+</head>
+<body>
+<header><div class="wrap id"><div class="av" aria-hidden="true">SR</div><div><h1>Dr. Sam Rahman</h1><p class="sub">Resident, Internal Medicine (Year 2) · e-Portfolio</p></div></div></header>
+<nav role="tablist" aria-label="Portfolio sections">
+<button role="tab" aria-selected="true" data-t="home">Overview</button>
+<button role="tab" aria-selected="false" data-t="proc">Procedure log</button>
+<button role="tab" aria-selected="false" data-t="cert">Certificates</button>
+<button role="tab" aria-selected="false" data-t="att">Attendance</button>
+<button role="tab" aria-selected="false" data-t="ref">Reflections</button>
+<button role="tab" aria-selected="false" data-t="plan">Goals and feedback</button>
+</nav>
+<main class="wrap">
+
+<section id="home" class="on">
+<h2>Overview</h2>
+<div class="stats">
+<div class="stat"><b>86</b><span>procedures logged</span></div>
+<div class="stat"><b>6</b><span>certificates uploaded</span></div>
+<div class="stat"><b>91%</b><span>teaching attendance</span></div>
+<div class="stat"><b>0</b><span>reflective entries</span></div>
+</div>
+<div class="card"><b>Profile</b><p style="margin:6px 0 0">Internal Medicine resident, second year of a four-year programme. Rotations so far: general medicine, cardiology, emergency medicine and the intensive care unit. Portfolio opened in July 2024.</p></div>
+<div class="card"><b>About this portfolio</b><p style="margin:6px 0 0;color:var(--mute)">Use the tabs above to browse the evidence this resident has uploaded so far.</p></div>
+</section>
+
+<section id="proc">
+<h2>Procedure log</h2>
+<div class="card scroll"><table>
+<thead><tr><th>Date</th><th>Procedure</th><th>Setting</th><th>Supervision</th><th>Count</th></tr></thead>
+<tbody>
+<tr><td>12 Aug 2024</td><td>Peripheral cannulation</td><td>Ward</td><td><span class="tag">Direct</span></td><td>14</td></tr>
+<tr><td>03 Sep 2024</td><td>Arterial blood gas</td><td>Ward</td><td><span class="tag">Direct</span></td><td>9</td></tr>
+<tr><td>21 Oct 2024</td><td>Lumbar puncture</td><td>Emergency</td><td><span class="tag">Direct</span></td><td>3</td></tr>
+<tr><td>15 Nov 2024</td><td>Ascitic tap</td><td>Ward</td><td><span class="tag">Direct</span></td><td>4</td></tr>
+<tr><td>09 Jan 2025</td><td>Central venous catheter</td><td>ICU</td><td><span class="tag">Direct</span></td><td>6</td></tr>
+<tr><td>27 Feb 2025</td><td>Chest drain</td><td>Emergency</td><td><span class="tag">Direct</span></td><td>2</td></tr>
+<tr><td>18 Mar 2025</td><td>Arterial line</td><td>ICU</td><td><span class="tag">Indirect</span></td><td>7</td></tr>
+<tr><td>30 Apr 2025</td><td>ECG interpretation</td><td>Cardiology</td><td><span class="tag">Indirect</span></td><td>31</td></tr>
+<tr><td>11 Jun 2025</td><td>Endotracheal intubation</td><td>ICU</td><td><span class="tag">Direct</span></td><td>5</td></tr>
+<tr><td>04 Aug 2025</td><td>Central venous catheter</td><td>ICU</td><td><span class="tag">Indirect</span></td><td>5</td></tr>
+</tbody></table></div>
+<p style="color:var(--mute);font-size:.85rem">Showing the 10 most recent entries. Total logged: 86.</p>
+</section>
+
+<section id="cert">
+<h2>Certificates</h2>
+<div class="certs">
+<div class="cert"><b>Basic Life Support (BLS)</b><span>Issued Jul 2024 · valid to Jul 2026</span></div>
+<div class="cert"><b>Advanced Cardiac Life Support (ACLS)</b><span>Issued Sep 2024 · valid to Sep 2026</span></div>
+<div class="cert"><b>Infection Prevention and Control</b><span>Issued Jul 2024</span></div>
+<div class="cert"><b>Point-of-Care Ultrasound Workshop</b><span>Attended Mar 2025 · 8 hours</span></div>
+<div class="cert"><b>Patient Safety Fundamentals</b><span>Issued Nov 2024 · online module</span></div>
+<div class="cert"><b>Good Clinical Practice (GCP)</b><span>Issued Jan 2025</span></div>
+</div>
+</section>
+
+<section id="att">
+<h2>Attendance records</h2>
+<div class="card scroll"><table>
+<thead><tr><th>Activity</th><th>Attended</th><th>Rate</th><th></th></tr></thead>
+<tbody>
+<tr><td>Weekly grand rounds</td><td>41 of 44</td><td>93%</td><td><div class="bar"><i style="width:93%"></i></div></td></tr>
+<tr><td>Departmental teaching</td><td>35 of 40</td><td>88%</td><td><div class="bar"><i style="width:88%"></i></div></td></tr>
+<tr><td>Morbidity and mortality meetings</td><td>10 of 12</td><td>83%</td><td><div class="bar"><i style="width:83%"></i></div></td></tr>
+<tr><td>Simulation sessions</td><td>8 of 8</td><td>100%</td><td><div class="bar"><i style="width:100%"></i></div></td></tr>
+<tr><td>Journal club</td><td>16 of 18</td><td>89%</td><td><div class="bar"><i style="width:89%"></i></div></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="ref">
+<h2>Reflections</h2>
+<div class="empty"><b>No reflective entries yet</b>Entries you add will appear here.<br><button disabled>Add entry</button></div>
+</section>
+
+<section id="plan">
+<h2>Goals and feedback</h2>
+<div class="empty"><b>Nothing here yet</b>Development goals, supervisor feedback and plans will appear here.<br><button disabled>Add item</button></div>
+</section>
+
+</main>
+
+<details>
+<summary>Group discussion questions</summary>
+<ol>
+<li>Is this portfolio demonstrating learning? What makes you say so?</li>
+<li>What do these artefacts show, and what can’t we conclude from them yet?</li>
+<li>What is missing, and how might reflective evidence be added?</li>
+<li>How could this resident’s professional growth be shown more clearly over time?</li>
+</ol>
+</details>
+
+<footer>Fictional resident created for a teaching session. Not a real person or record.</footer>
+
+<script>
+(function(){
+var tabs=document.querySelectorAll('nav button'),secs=document.querySelectorAll('section');
+tabs.forEach(function(b){b.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
+secs.forEach(function(s){s.classList.toggle('on',s.id===b.dataset.t)});
+window.scrollTo(0,0);
+})});
+})();
+</script>
+</body>
+</html>
